@@ -1,0 +1,148 @@
+.portfolio {
+    background: var(--second-bg-color);
+}
+
+.web {
+    margin-top: 10rem;
+}
+
+.portfolio h2 {
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 5.6rem;
+    font-weight: 700;
+}
+
+.portfolio-conteiner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.portfolio-conteiner .portfolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.portfolio-box img {
+    width: 100%;
+    transition: .5s ease;
+}
+
+.portfolio-box img:hover {
+    transform: scale(1.1);
+}
+
+.portfolio-conteiner .portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.portfolio-box:hover .portfolio-layer {
+    transform: translate(0);
+}
+
+.portfolio-layer h4 {
+    font-size: 3rem;
+}
+
+.portfolio-layer p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.portfolio-layer a i {
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
+.link-project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: .3rem;
+}
+
+.link-project a {
+    margin: .5rem;
+}
+
+.link-project a:hover {
+    box-shadow: 0 0 1rem var(--second-bg-color);
+}
+
+@media(max-width: 950px) {
+    .portfolio-box {
+        width: 100%;
+    }
+
+    .portfolio-conteiner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+}
+
+@media (max-width: 680px) {
+    .portfolio h2 {
+        margin-bottom: 1rem;
+        text-align: center;
+        font-size: 3.6rem;
+        font-weight: 800;
+    }
+
+    .portfolio-box {
+        width: 100%;
+    }
+
+    .portfolio-conteiner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .portfolio-box p {
+        display: none;
+    }
+
+    .portfolio-box h4 {
+        font-size: 1.5rem;
+        font-family: 'Courier New', Courier, monospace;
+        font: 700;
+        color: var(--second-bg-color);
+    }
+
+    .portfolio-layer {
+        padding: 1rem;
+    }
+}
