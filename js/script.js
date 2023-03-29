@@ -1,5 +1,5 @@
 /*=================menu mobile=====================*/
-function myFunction() {
+function switchIcon() {
      document.getElementById("menu-icon").classList.toggle("bx-x");
      document.getElementById("navbar").classList.toggle("active");    
   }
