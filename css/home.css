@@ -104,7 +104,8 @@ span {
         width: 100%;
         display: flex;
         flex-direction: column;  
-        background: var(--second-bg-color);    
+        background: var(--second-bg-color); 
+        margin-top: 7rem; 
     }
 
     .home-content{
@@ -118,7 +119,7 @@ span {
 
     .home-img img {
         width: 100%;
-        margin-top: -20rem;
+        margin-top: -18rem;
         margin-bottom: -15rem;
     }
 
