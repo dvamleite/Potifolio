@@ -1,5 +1,6 @@
 .contato {
     text-align: center;
+    min-height: 100vh;   
 }
 
 .contato h2 {

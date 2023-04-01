@@ -1,8 +1,12 @@
+.servicos{
+    min-height: 100vh;
+}
+
 .servicos h2 {
     margin-bottom: 5rem;
     text-align: center;
     font-size: 5.6rem;
-    font-weight: 700;
+    font-weight: 700;    
 }
 
 .servicos-container {
