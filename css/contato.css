@@ -38,10 +38,18 @@
 }
 
 .contato .btn {
+    width: 20%;
+    height: 45px;
     margin-top: 2rem;
     cursor: pointer;
 }
 
-@media(max-width: 900px) {}
-
-@media (max-width: 768px) {}
+@media (max-width: 680px) {
+    .contato{
+        padding: 4rem;
+    }
+    
+    .contato .btn{
+        width: 33%;
+    }
+}

@@ -17,6 +17,7 @@
     align-items: center;
     padding: .8rem;
     background: (--main-color);
+    color: var(--main-color);
     border-radius: .8rem;
     transition: .5s ease;
 }
@@ -27,5 +28,17 @@
 
 .footer-icon a i{
     font-size: 2.4rem;
-    color: red;    
+    color: var(--main-color);  
+}
+
+@media (max-width: 680px) {
+    .footer a{
+        display: none;
+    }
+
+    .footer p{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
 }
